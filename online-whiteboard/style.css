@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+}
+#select{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 3px solid; */
+}
+h1{
+    text-align: center;
+    padding: 0px 750px;
+    color: brown;
+    background-color: beige;
+}
+
+h3{
+    color: rgb(127, 97, 97);
+}
+.slide,#colorpicker,#handler{
+    margin: 22px 5px 5px 22px;
+}
+button{
+    cursor: pointer;
+    margin: 25px;
+}
+/* slider */
+.slide{
+    width: 100%;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#colorpicker{
+    
+    width: 40px;
+    height: 40px;
+}

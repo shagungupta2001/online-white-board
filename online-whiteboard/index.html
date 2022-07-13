@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITE BOARD</title>
+     <!-- icons > font-awesome -->
+     <script
+     src="https://kit.fontawesome.com/3b1cc6c86a.js"
+     crossorigin="anonymous"
+   ></script>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Selectors start -->
+    <div id="select">
+        <h1>ONLINE WHITE BOARD</h1>
+          <!-- Slider for line width -->
+        <div class="slide">
+            <h3 style="margin-bottom:5px">BRUSH & ERASER SIZE</h3>
+            <input type="range" min="5" max="100" class="slider" id="Range"/>
+        </div>
+
+        <div id="handler">
+            <button id="brush">
+                <i class="fa-solid fa-brush fa-2x"></i>
+            </button>
+            <button id="eraser" style="margin-left: 13px">
+                <i class="fas fa-eraser fa-2x"></i>
+              </button>
+              <button onclick="Undo()" style="margin-left:13px">
+                <i class="fas fa-undo-alt" style="font-size: 1.75em"></i>
+              </button>
+              <button onclick="Redo()" style="margin-left: 13px">
+                <i class="fas fa-redo-alt" style="font-size: 1.75em"></i>
+              </button>
+              <!-- colour picker -->
+              <!-- <div id="colorpicker"> -->
+                  <label for="color">COLOR PICKER</label>
+                  <input type="color" id="colorpicker" value="#000000"  style="margin-top: 5px" >
+              <!-- </div> -->
+        </div>
+    </div>
+    <!-- canvas -->
+    <canvas id="canvas"></canvas>
+
+    <script src="./white.js"></script>
+</body>
+</html>
